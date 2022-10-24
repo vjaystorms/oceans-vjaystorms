@@ -1,0 +1,34 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.button{
+  text-align: center;
+  margin-top: 50vh;
+}
+.button1,.button2,.button3,.button4{
+background-color: transparent;
+width: 150px;
+height: 50px;
+position: relative;
+text-align: center;
+margin: 30px;
+border: 1px solid #3498db;
+font-size: 1.5em;
+}
+.button1{
+
+}
+.button2{
+
+}
+
+.button3{
+
+}
+
+.button4{
+
+}

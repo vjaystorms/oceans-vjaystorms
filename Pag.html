@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Photography-Vj_Sz</title>
+  <link rel="stylesheet" href="css\Pag.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="showcase">
+
+    <header>
+      <h2  class="logo play">Vjaystorms</h2>
+      <div class="toggle">
+      </div>
+    </header>
+
+    <video src="video\oceans.mp4" autoplay muted loop></video>
+    <div class="overlay">
+    </div>
+    <div class="text">
+      <h2>Food Science</h2>
+      <h3>Exploring The Art</h3>
+      <p>The next best thing to eating food, is talking about it. And we've all done our fair share of that. But there are some people who love food so much, who think about food in just the right way, that they articulate what we've always felt but
+        haven't been able to eloquently put into words.</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="socials">
+      <li><a href="#"><img src="images\icons\facebook.png" alt=""></li>
+      <li><a href="#"><img src="images\icons\instagram.png" alt=""></a></li>
+      <li><a href="#"><img src="images\icons\tiktok.png" alt=""></a></li>
+      <li><a href="#"><img src="images\icons\twitter.png" alt=""></a></li>
+
+  </section>
+  <div class="menu">
+    <ul>
+      <a href="#">
+        <li>Home</li>
+      </a>
+      <a  href="#">
+        <li>Bake</li>
+      </a>
+      <a  href="#">
+        <li>Shop</li>
+      </a>
+      <a  href="#">
+        <li>recipe</li>
+      </a>
+      <a  href="#">
+        <li>Cooking Tips</li>
+      </a>
+
+
+
+
+
+    </ul>
+
+  </div>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+
+  <script type="text/javascript">
+    // const menuToggle = document.querySelector('.toggle')
+    // const showcase = document.querySelector('.showcase');
+    // const crossfade = document.querySelector('.overlay');
+    // const slide = document.querySelector('.logo');
+    //
+    //
+    // menuToggle.addEventListener('click', function() {
+    //   menuToggle.classList.toggle('close');
+    //   showcase.classList.toggle('shift');
+    //   crossfade.classList.toggle('crossfade');
+    //   slide.classList.toggle('slide');
+    //   playpause();
+    // })
+    $(".toggle").click(
+      function() {
+        $(".toggle").toggleClass("close");
+        $(".showcase").toggleClass("shift");
+        $(".overlay").toggleClass("crossfade");
+        $(".logo").toggleClass("slide");
+      }
+    );
+    $(".play").click(function() {
+      playpause();
+    })
+    var count = 1;
+    var audio = new Audio("video/leonell-cassio-the-blackest-bouquet-118766.mp3");
+
+    function playpause() {
+      if (count == 1) {
+        count = 0;
+        audio.play();
+      } else {
+        count = 1;
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+
+
+</html>
